@@ -16,7 +16,7 @@ body {
 	font-size: 1rem;
 	background-color: var(--background-vermelho);
 	background-image: url(images/bg-intro-mobile.png);
-	background-size: cover;
+	background-size: auto;
 	background-repeat: no-repeat;
 	margin: 10% 3%;
 	color: var(--branco);
@@ -100,10 +100,53 @@ body {
 }
 
 @media screen and (min-width: 1000px) {
+	html,
+	body {
+		height: 100vh;
+	}
+
 	body {
 		background-image: url(images/bg-intro-desktop.png);
 		background-size: auto;
+		background-repeat: repeat;
+		margin: 0% 10%;
+		display: flex;
 		flex-direction: row;
-		margin: 3% 3%;
+		align-items: center;
+		column-gap: 10%;
+	}
+
+	.apresentacao,
+	.form {
+		width: 50%;
+	}
+
+	.apresentacao_titulo {
+		margin: 5% 0;
+		text-align: start;
+		width: 75%;
+	}
+
+	.apresentacao_descricao {
+		font-size: 1rem;
+		text-align: start;
+	}
+
+	.form_ad {
+		margin: 0 0 5% 0;
+		padding: 3%;
+	}
+
+	.form_signup {
+		padding: 5% 0;
+	}
+
+	.form_signup_input {
+		margin: 2% 5%;
+		padding: 3%;
+	}
+
+	.form_footer_terms {
+		margin: 2% 10%;
 	}
 }
