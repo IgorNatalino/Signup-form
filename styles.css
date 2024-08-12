@@ -1,0 +1,109 @@
+:root {
+	--background-vermelho: hsl(0, 100%, 74%);
+	--verde-btn: rgb(56, 204, 140);
+	--roxo-ad: hsl(248, 32%, 49%);
+	--azul-escuro: hsl(249, 10%, 26%);
+	--cinza-azulado: hsl(246, 25%, 77%);
+	--branco: #ffffff;
+
+	/* box-shadow */
+
+	--box-shadow: 0px 10px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	background-color: var(--background-vermelho);
+	background-image: url(images/bg-intro-mobile.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 10% 3%;
+	color: var(--branco);
+	display: flex;
+	flex-direction: column;
+}
+
+.apresentacao_titulo {
+	font-size: 2rem;
+	text-align: center;
+	font-weight: bold;
+	margin: 30px 10px;
+	line-height: 135%;
+}
+
+.apresentacao_descricao {
+	text-align: center;
+	font-size: 18px;
+	line-height: 150%;
+}
+
+.form_ad {
+	background-color: var(--roxo-ad);
+	margin: 12% 0 8%;
+	text-align: center;
+	padding: 5% 20%;
+	line-height: 150%;
+	border-radius: 10px;
+	box-shadow: var(--box-shadow);
+	letter-spacing: 1px;
+}
+
+.form_ad_bold {
+	font-weight: 600;
+}
+
+.form_signup {
+	background-color: var(--branco);
+	border-radius: 10px;
+	box-shadow: var(--box-shadow);
+	padding: 5% 0;
+}
+
+.form_signup_input {
+	margin: 2% 5%;
+	width: -webkit-fill-available;
+	outline: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	padding: 4%;
+}
+
+.form_signup_input::placeholder {
+	font-weight: 600;
+}
+
+.form_signup_input-Submit {
+	background-color: var(--verde-btn);
+	font-weight: 500;
+	text-align: center;
+	line-height: 150%;
+	box-shadow: 0px 4px 2px 0px rgb(50, 184, 126);
+	text-transform: uppercase;
+	border-radius: 5px;
+	margin: 2% 5%;
+	width: -webkit-fill-available;
+	padding: 4%;
+	letter-spacing: 1px;
+}
+
+.form_footer_terms {
+	font-size: 0.8rem;
+	text-align: center;
+	color: var(--cinza-azulado);
+	line-height: 175%;
+	margin: 2% 10%;
+}
+
+.terms {
+	color: var(--background-vermelho);
+	font-weight: 600;
+}
+
+@media screen and (min-width: 1000px) {
+	body {
+		background-image: url(images/bg-intro-desktop.png);
+		background-size: auto;
+		flex-direction: row;
+		margin: 3% 3%;
+	}
+}
