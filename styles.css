@@ -5,6 +5,8 @@
 	--azul-escuro: hsl(249, 10%, 26%);
 	--cinza-azulado: hsl(246, 25%, 77%);
 	--branco: #ffffff;
+	--black: #000;
+	--vermelho-erro: #ff3860;
 
 	/* box-shadow */
 
@@ -66,10 +68,35 @@ body {
 	outline: 1px solid rgba(0, 0, 0, 0.2);
 	border-radius: 2px;
 	padding: 4%;
+	color: var(--black);
+}
+
+.form_signup_input:focus {
+	outline: 1px solid var(--roxo-ad);
+	transition: 0.5s;
 }
 
 .form_signup_input::placeholder {
 	font-weight: 600;
+}
+
+.form_control.error > .form_signup_input {
+	outline: 1px solid var(--vermelho-erro);
+	color: var(--vermelho-erro);
+	transition: 0.5s;
+	text-align: start;
+}
+
+.form_control.success > .form_signup_input {
+	outline: 1px solid var(--verde-btn);
+	color: var(--verde-btn);
+	transition: 0.5s;
+	text-align: start;
+}
+
+.error {
+	color: var(--vermelho-erro);
+	text-align: end;
 }
 
 .form_signup_input-Submit {
@@ -143,7 +170,7 @@ body {
 
 	.form_signup_input {
 		margin: 2% 5%;
-		padding: 3%;
+		padding: 2.5%;
 	}
 
 	.form_footer_terms {
