@@ -81,6 +81,7 @@ body {
 }
 
 .form_control.error > .form_signup_input {
+	background-color: var(--branco);
 	outline: 1px solid var(--vermelho-erro);
 	color: var(--vermelho-erro);
 	transition: 0.5s;
@@ -88,13 +89,17 @@ body {
 }
 
 .form_control.success > .form_signup_input {
+	background-color: var(--branco);
 	outline: 1px solid var(--verde-btn);
 	color: var(--verde-btn);
 	transition: 0.5s;
 	text-align: start;
 }
 
-.error {
+small.error {
+	display: block;
+	font-size: 0.8rem;
+	margin: 0 5% 0 0;
 	color: var(--vermelho-erro);
 	text-align: end;
 }
